@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic-skeleton.css">
+  <link rel="stylesheet" media="only screen and (max-width:600px) " href="basic-skeleton-small-screen.css" />
+  <title>Document Website</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="topnav">
+      <img src="mylogo.png" alt="Mindtree logo" width="100" height="50">
+      <a class="Home" href="#home">Home</a>
+      <a class="About" href="#about">About-Us</a>
+      <a class="Contact" href="#contact">Contact</a>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" alt="Search" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home content -->
+  <div class="homeContent" style="padding-left:16px">
+    <h1>Responsive Search Bar</h1>
+    <p>Navigation bar with a search box and a submit button inside of it.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <!-- <audio controls autoplay muted>
+                    <source src="sons/xxx.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                  </audio> -->
+    <div class="section">
+      <video controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <img src="puppy.jpg" alt="Puppy in bed">
+    </div>
+  </div>
+
+
+  <!-- About-Us Content -->
+  <div class="aboutContent" style="padding-left:16px">
+    <p>This is About-us Content</p>
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+  <!-- Contact Content -->
+  <div class="contactContent" style="padding-left:16px">
+    <section>
+      <p> Hey this is Contact Content</p>
+      <h2>Contact Information</h2>
+      <h3>Name : Ramamurthy Swami </h3>
+      <h3>Phone: 8574857489 </h3>
+    </section>
+    <form>
+      <label for="first name">First name:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br><br>
+      <label for="last name">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="footer">
+    <div class="footerLinks">
+      <a href="#footlink">Read More on Footlink 1</a>
+      <a href="#footlink">Read More on Footlink 2</a>
+      <div>
+        © 1996-2022, Mywebsite.com, Inc. or its affiliates
+      </div>
+    </div>
+
+  </div>
+  <!-- Script of html -->
+  <script src="basic-skeleton.js"></script>
+</body>
+
+</html>
