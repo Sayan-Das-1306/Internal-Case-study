@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/website.css">
+    <link rel="stylesheet" media="only screen and (max-width:800px) " href="./css/website-small-screen.css">
+    <title>My Website</title>
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <header class="header-area">
+      <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/image/mylogo.png" alt="My Website logo"></a>
+            </div>
+          <div class="navlink">
+            <a class="Home" aria-label="Home My Website" href="">Home</a>
+            <a class="About" aria-label="About-Us My Website" href="">About-Us</a>
+            <a class="Contact" aria-label="Contact My Website" href="">Contact</a>
+          </div>
+
+          <div class="search-container">
+            <form aria-label="Home Search">
+              <label for="searchbox" class="visibilityHidden">Search</label>
+              <input id="searchbox" type="text" aria-label="Search Box" placeholder="What can we find for you">
+              <button class="buttonSubmit" aria-label="Search button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="#main">
+      <!-- Home Page Content -->
+      <div class="homeContent">
+      <div class="grid-container">
+        <div class="item1">
+          <h1>Website Title</h1>
+          <p> 
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                  and scrambled it to make a type specimen book.
+          </p>
+          <p>
+              It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+               software like Aldus PageMaker including versions of Lorem Ipsum
+          </p>
+        </div>
+      
+        <div class="item2">
+          <article aria-label="Website Video">
+          <video controls>
+            <source src="/video/websiteVideo.ogg" type="video/ogg">
+            <track src="/video/websiteVideoTrack.vtt" kind="subtitles" srclang="en" label="English" default>
+          </video>
+        </article>
+        </div>
+        <div class="item3">
+          <img src="/image/puppy.jpg" alt="Puppy in bed">
+        </div>
+      </div>
+    </div>
+
+      <!-- About-Us Page Content-->
+      <div class="aboutContent">
+        <div class="grid-container">
+          <div class="item1">
+            <h1>About-Us</h1>
+            <p>
+            An "About Us" Page is where you reveal your brand story,
+             business values, mission, and experiences.
+            Now the question is: why would you want to share all this information and make it appealing? The answer is simple: you want to tell your audience who you are, show them what you are good at, 
+            and tell them you are worthy of their trust.
+          </p>
+          </div>
+          <div class="item2">
+            <section aria-label="My Website Audio">
+              <h2>My Website Audio</h2>
+              <audio src="/audio/light_buzz.mp3"
+                       controls="controls"
+                       aria-labelledby="audioInfo">
+                </audio>
+              </section>
+              <p id="audioInfo" style="display: none;">
+                It is a Electric Buzz Audio, Play to listen.
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Page Content -->
+      <div class="contactContent">
+        <div class="grid-container">
+          <div class="item1">
+              <h1>Contact Information</h1>
+          </div>
+          <div class="item2">
+            <h2>Name : Ramamurthy Swami </h2>
+              <h2>Phone: 8574857489 </h2>
+              <h2>Email: ramamurthy123@gmail.com </h2>
+          </div>
+          <div class="item3">
+            <h2>Contact Form</h2>
+    <form class="account_form">
+      <div class="account__item">
+        <span class="account__itemContent account__itemContent--firstName flex-item-left">
+          <label for="fname">First name
+            <span class="fname_required">*</span>
+    
+            <span class="account__validation account__validation--invalid">
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="account__validationIcon">
+                <path d="M12 1l-12 22h24l-12-22zm-1 8h2v7h-2v-7zm1 11.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/>
+              </svg>
+              <span class="account__validationMessage">Name is required</span>
+            </span>
+            <span class="account__validation account__validation--valid">
+              <svg aria-hidden="true" viewBox="0 0 24 24" class="account__validationIcon">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"/>
+              </svg>
+              <span class="account__validationMessage">Ok</span>
+            </span>
+
+          </label><br>
+          <input id="fname" name="fname" value="" required type="text" onblur="validateFieldOnBlur(event)" class="account__textbox"><br>
+          </span>
+          
+      </div>
+      
+      <div class="account__item">
+        <span class="account__itemContent account__itemContent--lastName">
+          <label for="lname">Last name
+          </label><br>
+          <input type="text" id="lname" name="lname" value="" class="account__textbox"><br>
+        </span>
+      </div>
+      <div class="account__item">
+        <span class="account__itemContent account__itemContent--email">
+          <label for="Email">Email
+          </label><br>
+          <input type="text" id="Email" name="email" value="" class="account__textbox"><br>
+        </span>
+      </div>
+      <button class="buttonSubmit" aria-label="Submit button">Submit</button>
+    </form>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <footer class="footer-area">
+      <div class="footerLinks">
+        <a href="" aria-label="Read Privacy Policy">Privacy Policy</a>
+        <a href="" aria-label="Read Terms & Conditions">Terms & Conditions</a>
+        
+        <div>
+          © 1996-2022, Mywebsite.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="./js/website.js"></script>
+  </body>
+</html>

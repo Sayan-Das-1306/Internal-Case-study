@@ -1,0 +1,114 @@
+body {
+  background-color: aqua;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;  
+    justify-content: initial; 
+}
+
+/* Nav Content */
+nav img {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.navlink{
+    display: grid;
+    margin-left: 0;
+}
+
+.navlink a{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.navlink .Contact{
+  margin-right: 0;
+}
+
+.container .search-container{
+    margin-bottom: 0;
+}
+
+.container .search-container form{
+    display: flex;
+}
+.container .search-container input[type=text] {
+    padding: 6px;
+    margin-top: 0.2em;
+    font-size: 1.2em;
+    border: none;
+    float: left;
+    margin-left: 1.2em;
+    width: 100%;
+}
+
+  
+nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 0.2em;
+    margin-right: 16px;
+    background: #a8c0c0;
+    font-size: 0.8em;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Main Content */
+
+  .grid-container {
+    display: block;
+    grid-template-rows: auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  .grid-container > div {
+    /* background-color: rgba(138, 31, 31, 0.8); */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1em;
+  }
+
+  .item1 p,.aboutContent .item1 p{
+    font-size: 1em;
+  }
+
+  .item2 video, .item3 img{
+    width: 15em;
+    height: 10em;
+  }
+
+  /* Account Form */
+label{
+    display: flex;
+}
+
+.account__itemContent--firstName,
+.account__itemContent--lastName,
+.account__itemContent--email{
+  max-width: 60%;
+  min-width: 50%;
+}
+
+.account_form .buttonSubmit{
+  font-size: 0.6em;
+  cursor: pointer;
+}
